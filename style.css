@@ -357,4 +357,7 @@
     .container_footer {
         flex-direction: column;
     } 
+    .blog_line {
+        flex-direction: column;
+    }
   }
