@@ -111,7 +111,12 @@
     justify-content: center;
     max-height: 550px;
     min-height: 550px;
-
+}
+.section_ring .diamond_left{
+    order: 2;
+}
+.section_ring .diamond_right{
+    order: 1;
 }
 .diamond_right p{
     padding: 20px;
@@ -275,7 +280,7 @@
 .container_footer{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
 }
 .container_footer p{
     padding: 10px 0px;
@@ -296,3 +301,60 @@
     background-color: gray;
     margin: 0px 15px;
 }
+
+@media screen and (max-width: 650px) {
+    .header_content_one{
+    flex-direction: column;
+    }
+    .header_content_two {
+        flex-direction: column;
+    }
+    .jewelry_content {
+        flex-direction: column;
+    }
+    .jewelry_left {
+        width: 100%;
+    }
+    .jewelry_right {
+        width: 100%;
+    }
+    .diamond_container {
+        flex-direction: column;
+    }
+    .section_ring .diamond_left{
+        order: 1;
+    }
+    .section_ring .diamond_right{
+        order: 2;
+    }
+
+    .diamond_left {
+        width: 100%;
+    }
+    .diamond_container {
+        display: flex;
+        max-height: 100%;
+    }
+    .diamond_right {
+        width: 100%;
+    }
+    .blog_container {
+        flex-direction: column;
+    }
+    .section_blog {
+        height: 100%;
+    }
+    .blog_right {
+        width: 100%;
+    }
+    .container_form {
+        display: flex;
+        flex-direction: column;
+    }
+    .new_input {
+    width: 100%;
+    }
+    .container_footer {
+        flex-direction: column;
+    } 
+  }
